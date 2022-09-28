@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Nouvelle page 1</title>
+<script language="javascript">
+
+function calculer ()
+{x=F.D1.options.selectedIndex;
+y=F.D2.options.selectedIndex;
+p=F.D1.options[x].value *F.D2.options[y].value
+alert("le produit est"+p);
+
+}
+
+
+</script>
+</head>
+
+<body>
+
+<form method="POST" action="--WEBBOT-SELF--"name="F">
+	<!--webbot bot="SaveResults" U-File="C:\Users\lenovo\Documents\Mes sites Web\_private\form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" -->
+	<p><select size="1" name="D1">
+	<option value="15">15</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<select size="1" name="D2">
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	</select></p>
+	<p>&nbsp;&nbsp; <input type="submit" value="calculer" name="B1" onclick="calculer()"></p>
+	<p>&nbsp;</p>
+</form>
+
+</body>
+
+</html>

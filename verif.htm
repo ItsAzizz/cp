@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Code</title>
+<script language=javascript>
+function verif()
+{if (F.T1.value.charAt(0)!="0" )
+{alert ("le code doit commencer par 0");}
+if (F.T2.value.length==0)
+{alert("champs vide ");}
+if (F.T3.value=="")
+{alert (" champs vide ");}
+x=F.T2.value;
+for (i=0;i<=x.length;i++)
+if ( x.charAt(i).toUpperCase()<'A')(x.charAt(i).toUpperCase>'Z')
+{alert("vous devez saisir que des lettres" );}
+}
+</script>
+</head>
+
+<body>
+
+<form method="POST" action="accué.htm" name ="F">
+	<table border="0" width="100%" id="table1" style="border-collapse: collapse">
+		<tr>
+			<td width="595">Code</td>
+			<td>
+			<p align="center"><input type="text" name="T1" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">Nom</td>
+			<td>
+			<p align="center"><input type="text" name="T2" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595" height="24">Prénom</td>
+			<td height="24">
+			<p align="center"><input type="text" name="T3" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">CIN</td>
+			<td>
+			<p align="center"><input type="text" name="T4" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">Adresse Email</td>
+			<td>
+			<p align="center"><input type="text" name="T5" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">Age</td>
+			<td>
+			<p align="center"><input type="text" name="T6" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">niveau</td>
+			<td>
+			<p align="center"><select size="1" name="D1">
+			<option>1ére IAG</option>
+			<option>2éme IAG</option>
+			<option>3éme IAG</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="595">genre</td>
+			<td>
+			<p align="center"><input type="radio" value="V1" checked name="R1">M<input type="radio" name="R1" value="V2">F</td>
+		</tr>
+		<tr>
+			<td width="595">option</td>
+			<td>
+			<p align="center"><input type="checkbox" name="C1" value="ON">All<input type="checkbox" name="C2" value="ON">Dess<input type="checkbox" name="C3" value="ON">Esp</td>
+		</tr>
+		<tr>
+			<td width="595">Date</td>
+			<td>
+			<p align="center"><input type="text" name="T7" size="20"></td>
+		</tr>
+		<tr>
+			<td width="595">
+			<input type="submit" value="Envoyer" name="B1" style="float: right" onclick="verif()"></td>
+			<td>
+			<input type="button" value="Annuler" name="B2" style="float: left"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+
+</html>

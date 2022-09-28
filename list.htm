@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Nouvelle page 1</title>
+<script language = 'javascript' >
+function aff()
+{x=F.D1.options.selectedIndex;
+alert("l'indice de l'element selectionne est "+x);
+alert ("l'element selectionne est "+F.D1.options[x].text);
+alert ("le nombre d'élément est "+F.D1.options.length);
+}
+</script>
+</head>
+
+<body>
+
+<form method="POST" action="--WEBBOT-SELF--" name="F">
+	<!--webbot bot="SaveResults" U-File="C:\Users\lenovo\Documents\Mes sites Web\_private\form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" -->
+	<p><select size="1" name="D1">
+	<option>Tunisie</option>
+	<option>Algérie</option>
+	<option>Maroc</option>
+	</select></p>
+	<p><input type="submit" value="Afficher" name="B1" onclick="aff()"></p>
+</form>
+
+</body>
+
+</html>
