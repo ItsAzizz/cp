@@ -1,3 +1,4 @@
+#https://codeforces.com/contest/1714/problem/C
 for _ in range(int(input())):
   x=int(input())
   i=9
