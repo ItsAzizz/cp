@@ -1,3 +1,4 @@
+#https://codeforces.com/contest/1709/problem/A
 for _ in range(int(input())):
   x=int(input())-1
   t=list(map(int,input().split()))
