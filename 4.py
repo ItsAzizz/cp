@@ -1,3 +1,4 @@
+#https://codeforces.com/contest/1692/problem/A
 for _ in range(int(input())):
   t=[int(e) for e in input().split()]
   a=t[0]
