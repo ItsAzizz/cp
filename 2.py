@@ -1,3 +1,4 @@
+#https://codeforces.com/contest/1700/problem/A
 for _ in range(int(input())):
   ch=input()
   n=int(ch.split()[0])
